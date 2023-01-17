@@ -1,5 +1,11 @@
-document.querySelector('.robo').addEventListener("click", conversaRobotron);
+const robotron = document.querySelector('.robo')
 
-function conversaRobotron() {
-    console.log('oi');
+robotron.addEventListener("click", (event) => {
+    console.log(event);
+});
+
+function conversaRobotron(nome) {
+    console.log(`Olá, ${nome}`);
 }
+
+conversaRobotron("Bigas")
